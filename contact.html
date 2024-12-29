@@ -1,10 +1,9 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>TRAVEL RECOMMENDATION</title>
+    <title>TRAVEL RECOMMENDATION. Contact Us</title>
     <link rel="stylesheet" href="./travel_recommendation.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <script src="./travel_recommendation.js"></script>
 </head>
 <body class="bg-primary">
 <nav>
@@ -13,13 +12,6 @@
         <li><a href="./travel_recommendation.html" id="home">Home </a></li>
         <li><a href="./about.html" id="About">About Us </a></li>
         <li><a href="./contact.html" id="contact">Contact Us </a></li>
-        <li><input type="text" id="searchField" placeholder="Enter a city name"/></li>
-        <li>
-            <button id="searchButton">Search</button>
-        </li>
-        <li>
-            <button id='searchReset' onclick="Reset(this)">Reset</button>
-        </li>
     </ul>
 </nav>
 <div class="container-fluid h-100">
@@ -64,28 +56,41 @@
                     </div>
                     <div class="col-5">
                         <h1 class="display-2" style="font-weight: bold; color:black;">
-                            DISCOVER
-                        </h1>
-                        <h1 class="display-2" style="font-weight: bold; color:black;">
-                            NEW
-                        </h1>
-                        <h1 class="display-2" style="font-weight: bold; color:black;">
-                            HORIZONS
+                            CONTACT US
                         </h1>
                         <hr/>
                         <h5 style="font-weight: normal; color:black;">
-                            We are a travel company dedicated to crafting unforgettable experiences tailored just for you.
-                            Whether you're seeking serene beaches, bustling cityscapes, or adventurous getaways,
-                            we offer personalized packages, seamless planning, and exceptional service to make your dream journey a reality.
+                            Get in touch
                         </h5>
-                        <h3 style="font-weight: normal; color:black;">
-                            Let us handle the details while you create memories that last a lifetime!
-                        </h3>
-                        <hr/>
-                        <button type="button" onclick="bookNow(0, 'any country')" class="btn btn-lg btn-success">BOOK NOW</button>
-                    </div>
-                    <div class="col-6" id="searchResult">
 
+                    </div>
+                    <div class="col-6">
+                        <div class="input-group mb-3">
+                            <label for="username" class="form-label">Name</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="username" aria-describedby="basic-addon3 basic-addon4">
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="email" aria-describedby="basic-addon3 basic-addon4">
+                            </div>
+                        </div>
+
+                        <div class="input-group input-group-lg mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <div class="input-group input-group-lg">
+                                <textarea class="form-control" aria-label="With textarea" id="message"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="input-group input-group-lg mb-3">
+                            <div class="input-group input-group-lg">
+                                <button type="button" class="btn btn-lg btn-primary">Submit</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,5 +98,4 @@
     </div>
 </div>
 </body>
-
 </html>
